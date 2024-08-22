@@ -7,12 +7,26 @@ import tw from "./assets/tw.svg";
 import tg from "./assets/tg.svg";
 import chad from "./assets/mainchad.png";
 import boat from "./assets/boat.png";
+import sound from './assets/music/audio.mp3';
+import Overlay from './components/Overlay';
 
 function App() {
   let ca = "-TBA-";
 
+  const playAudio = () => {
+    const audio = document.querySelector('.audio');
+    if (audio) {
+      audio.play();
+    }
+  };
+
   return (
     <div className="App">
+      <Overlay playAudio={playAudio} />
+        <audio autoPlay className="audio" loop>
+          <source src={sound} type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
       <div className="section1">
         <div className="section1-block">
           <img className="logo" alt="logoChad" src={logo}/>
@@ -32,7 +46,7 @@ function App() {
       <div className="section2">
           <div className="section2-block">
             <div className="s2b-left">
-              <h2 className="heading1">Utility: Farming Rewards Forever</h2>
+              <h2 className="heading">Utility: Farming Rewards Forever</h2>
               <p className="text">
                 Top $CHAD holders farm massive TX fees—stack your bags and watch the rewards flow nonstop. The dev is all-in, reinvesting his 20% cut to keep the cartel growing stronger. Get in, hold tight, and let the narco profits roll in forever (DYOR: https://docs.moonshot.cc/faq)
               </p>
@@ -46,9 +60,9 @@ function App() {
           <p className="divider"></p>
       </div>
       <div className="section4">
-        <h2 className="heading">Snort, Flip, Repeat.</h2>
-        <p className="">Join the $CHAD cartel and ride the white line to financial freedom. Are you ready to get high?</p>
-        <button className="btn">BUY $CHAD</button>
+        <h2 className="heading lasth">Snort, Flip, Repeat.</h2>
+        <p className="lastdesc">Join the $CHAD cartel and ride the white line to financial freedom. Are you ready to get high?</p>
+        <button className="button">BUY $CHAD</button>
         <div className="socialBlock">
           <a href="https://t.me/_" target="_blank" rel="noopener noreferrer"><img className="social" alt="telegram" src={tg} /></a>
           <a href="https://t.me/_" target="_blank" rel="noopener noreferrer"><img className="social" alt="twitter" src={tw} /></a>

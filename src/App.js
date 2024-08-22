@@ -2,7 +2,7 @@ import './App.css';
 import Coming from './components/Coming';
 
 function App() {
-  let ca = "-TBA-";
+
 
   const playAudio = () => {
     const audio = document.querySelector('.audio');

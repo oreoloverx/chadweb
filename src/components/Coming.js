@@ -24,22 +24,6 @@ export default function Coming({ playAudio }) {
     }
   }, [animateImages]);
 
-  function toggle() {
-    setIsOpen((prevIsOpen) => !prevIsOpen);
-    playAudio();
-
-    // Start animation when CONTINUE is clicked
-    setAnimateImages(true);
-
-    // Reset animation after a delay (adjust as needed)
-    setTimeout(() => {
-      setAnimateImages(false);
-      document.querySelectorAll('.rocket').forEach((rocket) => {
-        rocket.style.transform = 'translateY(0)';
-      });
-    }, 1500); // Adjust the delay based on your animation duration
-  }
-
   return (
     <>
       <div

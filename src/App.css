@@ -3,12 +3,38 @@
   padding:0;
 }
 .section1{
-  background-image: url('./assets/bg.PNG');
-  padding-top: 300px;
-  padding-bottom: 300px;
-  background-size: contain;
+  background-image: url('./assets/bg.png');
+  background-size: cover;
 }
-.img1 {
-  max-width: 600px;
+.section1-block{
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+.logo {
   margin:0 auto;
+  display: block;
+  padding-top:20px;
+}
+.chadText{
+  margin:0 auto;
+  display: block;
+}
+.cabox {
+  background-color: #000;
+  padding: 20px;
+  max-width: 200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  color:#fff;
+}
+.socialBlock {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.social {
+  margin-top:15px;
+  margin-right: 5px;
+  margin-left: 5px;
 }

@@ -2,9 +2,9 @@ import './App.css';
 import logo from "./assets/logo.png";
 import chadText from "./assets/CHAD.png";
 import chadDesc from "./assets/cocaine.png";
-import dex from "./assets/dex.png";
-import tw from "./assets/tw.png";
-import tg from "./assets/tg.png";
+import dex from "./assets/dex.svg";
+import tw from "./assets/tw.svg";
+import tg from "./assets/tg.svg";
 import chad from "./assets/mainchad.png";
 import boat from "./assets/boat.png";
 
@@ -22,9 +22,9 @@ function App() {
             <p className="caText">CA: {ca}</p>
           </div>
           <div className="socialBlock">
-            <a href="https://t.me/_" target="_blank" rel="noopener noreferrer"><img className="social" src={tg} /></a>
-            <a href="https://t.me/_" target="_blank" rel="noopener noreferrer"><img className="social" src={tw} /></a>
-            <a href="https://t.me/_" target="_blank" rel="noopener noreferrer"><img className="social" src={dex} /></a>
+            <a href="https://t.me/_" target="_blank" rel="noopener noreferrer"><img className="social" alt="telegram" src={tg} /></a>
+            <a href="https://t.me/_" target="_blank" rel="noopener noreferrer"><img className="social" alt="twitter" src={tw} /></a>
+            <a href="https://t.me/_" target="_blank" rel="noopener noreferrer"><img className="social" alt="dexscreener" src={dex} /></a>
           </div>
           <img className="chad" alt="CHAD" src={chad}/>
         </div>
@@ -41,15 +41,21 @@ function App() {
               <img className="boat" alt="ChadsBoat" src={boat} />
             </div>
           </div>
-        </div>
-        <div className="section3">
+      </div>
+      <div className="section3">
           <p className="divider"></p>
+      </div>
+      <div className="section4">
+        <h2 className="heading">Snort, Flip, Repeat.</h2>
+        <p className="">Join the $CHAD cartel and ride the white line to financial freedom. Are you ready to get high?</p>
+        <button className="btn">BUY $CHAD</button>
+        <div className="socialBlock">
+          <a href="https://t.me/_" target="_blank" rel="noopener noreferrer"><img className="social" alt="telegram" src={tg} /></a>
+          <a href="https://t.me/_" target="_blank" rel="noopener noreferrer"><img className="social" alt="twitter" src={tw} /></a>
+          <a href="https://t.me/_" target="_blank" rel="noopener noreferrer"><img className="social" alt="dexscreener" src={dex} /></a>
         </div>
-        <div className="section4">
-          <div className="">
-          <h2 className="heading">Snort, Flip, Repeat.</h2>
-          <p className="">
-        </div>
+        <p className="CR">© All Rights Reserved By CHAD, in case if you steal anything from him he will fuck you in the ass.</p>
+      </div>
     </div>
   );
 }

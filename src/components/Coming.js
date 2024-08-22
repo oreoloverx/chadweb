@@ -4,8 +4,6 @@ import './Overlay.css';
 
 
 export default function Coming({ playAudio }) {
-  const [isOpen, setIsOpen] = useState(true);
-  const [animateImages, setAnimateImages] = useState(false);
 
   useEffect(() => {
     if (animateImages) {

@@ -19,6 +19,9 @@
   display: block;
   padding-top:20px;
 }
+.chadDescMob{
+  display: none;
+}
 .chadText{
   margin:0 auto;
   display: block;
@@ -133,4 +136,48 @@
 
 .chad {
   animation: shake 0.5s ease-in-out infinite;
+}
+
+@media only screen and (max-width: 490px) and (max-device-width : 490px) {
+  .chadDescMob{
+    display: block;
+    margin: 0 auto;
+  }
+  .logo {
+    max-width: 120px;
+  }
+  .chad {
+    max-width: 300px;
+  }
+  .chadDesc {
+    display: none;
+  }
+  .section1-block{
+    max-width: 100%;
+  }
+  .section2-block {
+    display: block;
+    margin: 0px 20px;
+  }
+  .s2b-left,.s2b-right {
+    max-width: 100%;
+  }
+  .boat{
+    margin-top:-80px;
+    margin-bottom: 40px;
+    margin-left: 0;
+    max-width: 300px;
+  }
+  .section3 {
+    max-height: 200px;
+  }
+  .heading{
+    font-size: 22px;
+    max-width: 390px;
+    text-align: center;
+  }
+  .text {
+    max-width: 390px;
+    text-align: center;
+  }
 }

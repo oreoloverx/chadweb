@@ -2,6 +2,7 @@ import './App.css';
 import logo from "./assets/logo.png";
 import chadText from "./assets/CHAD.png";
 import chadDesc from "./assets/cocaine.png";
+import chadMob from "./assets/cocainemob.png";
 import dex from "./assets/dex.svg";
 import tw from "./assets/tw.svg";
 import tg from "./assets/tg.svg";
@@ -32,6 +33,7 @@ function App() {
           <img className="logo" alt="logoChad" src={logo}/>
           <img className="chadText" alt="$CHAD" src={chadText}/>
           <img className="chadDesc" alt="Cocaine High And Dominant" src={chadDesc}/>
+          <img className="chadDescMob" alt="Cocaine High And Dominant" src={chadMob}/>
           <div className="cabox">
             <p className="caText">CA: {ca}</p>
           </div>

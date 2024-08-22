@@ -1,36 +1,13 @@
-import React, { useState, useEffect } from 'react';
+
 import round from '../assets/spinImg.png'
 import './Overlay.css';
 
 
 export default function Coming({ playAudio }) {
 
-  useEffect(() => {
-    if (animateImages) {
-      // Trigger animation by setting translateY and flip vertically with ease transition
-      document.querySelectorAll('.rocket').forEach((rocket) => {
-        if (rocket.classList.contains('rocketFlip')) {
-          // If the rocket has the 'rocketFlip' class, maintain the flipped state
-          rocket.style.transition = 'transform 1s ease'; // Adjust the duration and easing as needed
-          rocket.style.transform = 'translateY(-1000px) translateX(-1000px) scaleY(-1)';
-        } else {
-          // If the rocket doesn't have the 'rocketFlip' class, apply the default transform
-          rocket.style.transition = 'transform 1s ease'; // Adjust the duration and easing as needed
-          rocket.style.transform = 'translateY(-1000px) translateX(1000px)';
-        }
-      });
-    }
-  }, [animateImages]);
-
   return (
     <>
       <div
-        style={{
-          opacity: isOpen ? 1 : 0,
-          maxHeight: isOpen ? '1000px' : '0',
-          overflow: 'hidden',
-          transition: 'opacity 1s ease, max-height 1s ease',
-        }}
         className="overlay"
       >
         <div className="overlay-inside">
